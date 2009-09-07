@@ -1,3 +1,4 @@
+# TODO: Refactor this file.
 from comments.views import USER_INFO_SESSION_KEY, REMEMBER_USER_SESSION_KEY
 
 def user_info(request):

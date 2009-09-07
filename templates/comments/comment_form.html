@@ -1,8 +1,5 @@
-{% if allow_comments %}
-	<form class="comment_form" action="{% url submit-comment %}" method="post">
-	<table>
-	{{ comment_form.as_table }}
-	</table>
-	<p><input type="submit" value="Submit &raquo;" /></p>
-	</form>
-{% endif %}
+<form action="{% url comments.submit %}" method="post">
+<table>{{ comment_form }}</table>
+<p class="help">Format comments with <a href="http://en.wikipedia.org/wiki/Markdown" target="_blank">markdown</a>.  Raw HTML will be removed.</p>
+<p><input type="submit" value="Submit &raquo;" /></p>
+</form>
