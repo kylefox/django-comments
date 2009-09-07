@@ -1,0 +1,8 @@
+{% if allow_comments %}
+	<form class="comment_form" action="{% url submit-comment %}" method="post">
+	<table>
+	{{ comment_form.as_table }}
+	</table>
+	<p><input type="submit" value="Submit &raquo;" /></p>
+	</form>
+{% endif %}
